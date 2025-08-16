@@ -1,0 +1,1397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Beloved Baby Nibel ❤️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background: linear-gradient(-45deg, #ff6b9d, #ffc371, #ff8a80, #f06292, #ba68c8, #81c784);
+            background-size: 400% 400%;
+            animation: gradientShift 12s ease-in-out infinite;
+            overflow-x: hidden;
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            25% { background-position: 100% 50%; }
+            50% { background-position: 100% 100%; }
+            75% { background-position: 0% 100%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Enhanced Floating Elements */
+        .heart {
+            position: fixed;
+            font-size: 20px;
+            animation: floatUp 8s linear infinite;
+            pointer-events: none;
+            z-index: 1;
+            filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+        }
+
+        @keyframes floatUp {
+            0% {
+                opacity: 1;
+                transform: translateY(100vh) rotate(0deg) scale(0.5);
+            }
+            50% {
+                opacity: 0.8;
+                transform: translateY(50vh) rotate(180deg) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100px) rotate(360deg) scale(0.3);
+            }
+        }
+
+        .love-word {
+            position: fixed;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: 'Dancing Script', cursive;
+            animation: floatAround 12s ease-in-out infinite;
+            pointer-events: none;
+            z-index: 2;
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+            background: linear-gradient(45deg, #ff6b9d, #ffc371, #ff8a80);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @keyframes floatAround {
+            0% { transform: translate(-100px, 100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translate(calc(100vw + 100px), -100px) rotate(360deg); opacity: 0; }
+        }
+
+        /* Magical Particles */
+        .particle {
+            position: fixed;
+            width: 4px;
+            height: 4px;
+            background: #fff;
+            border-radius: 50%;
+            animation: particleFloat 6s linear infinite;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        @keyframes particleFloat {
+            0% {
+                opacity: 0;
+                transform: translateY(100vh) translateX(0);
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translateY(-100px) translateX(200px);
+            }
+        }
+
+        /* Header with enhanced styling */
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 4px 4px 12px rgba(0,0,0,0.4);
+            animation: titlePulse 4s ease-in-out infinite;
+            background: linear-gradient(45deg, #fff, #ffe0e6, #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        @keyframes titlePulse {
+            0%, 100% { transform: scale(1) rotate(0deg); }
+            25% { transform: scale(1.02) rotate(0.5deg); }
+            75% { transform: scale(1.02) rotate(-0.5deg); }
+        }
+
+        .subtitle {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            opacity: 0.95;
+            animation: fadeInUp 2.5s ease-out;
+            font-style: italic;
+        }
+
+        /* Realistic Book Styling */
+        .book-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 60px 0;
+            perspective: 1200px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .book {
+            width: 350px;
+            height: 450px;
+            position: relative;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            animation: bookFloat 6s ease-in-out infinite;
+            filter: drop-shadow(0 20px 40px rgba(0,0,0,0.3));
+        }
+
+        @keyframes bookFloat {
+            0%, 100% { 
+                transform: translateY(0px) rotateY(2deg) rotateX(5deg); 
+            }
+            50% { 
+                transform: translateY(-15px) rotateY(-2deg) rotateX(-5deg); 
+            }
+        }
+
+        .book:hover {
+            transform: rotateY(-25deg) rotateX(10deg) scale(1.05);
+            filter: drop-shadow(0 30px 60px rgba(0,0,0,0.4));
+        }
+
+        .book-spine {
+            position: absolute;
+            left: -10px;
+            top: 0;
+            width: 20px;
+            height: 100%;
+            background: linear-gradient(to right, #8e24aa, #5e35b1);
+            transform: rotateY(-90deg);
+            transform-origin: right;
+            border-radius: 0 5px 5px 0;
+        }
+
+        .book-cover, .book-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 15px;
+            border: 4px solid #fff;
+            box-shadow: 
+                inset 0 0 20px rgba(255,255,255,0.2),
+                0 15px 35px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            background: linear-gradient(135deg, #c2185b, #ad1457, #880e4f);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .book-cover::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: bookShine 3s ease-in-out infinite;
+        }
+
+        @keyframes bookShine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); opacity: 0; }
+        }
+
+        .book-back {
+            transform: rotateY(180deg);
+            background: linear-gradient(135deg, #7b1fa2, #512da8, #303f9f);
+        }
+
+        .book-cover h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #fff;
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.6);
+            z-index: 10;
+        }
+
+        .book-cover p {
+            font-size: 1.4rem;
+            font-style: italic;
+            opacity: 0.9;
+            text-align: center;
+            z-index: 10;
+            line-height: 1.6;
+        }
+
+        /* Enhanced Book Modal */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            z-index: 999;
+            display: none;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .book-modal {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 900px;
+            height: 85%;
+            background: linear-gradient(135deg, #fafafa, #f5f5f5);
+            border-radius: 25px;
+            box-shadow: 
+                0 25px 80px rgba(0,0,0,0.4),
+                inset 0 0 30px rgba(255,255,255,0.1);
+            z-index: 1000;
+            display: none;
+            overflow: hidden;
+            color: #333;
+            border: 3px solid rgba(255,255,255,0.2);
+        }
+
+        .book-inner {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            position: relative;
+            background: linear-gradient(to right, #fafafa 50%, #f8f8f8 50%);
+        }
+
+        .book-page {
+            width: 50%;
+            height: 100%;
+            padding: 40px 30px;
+            position: relative;
+            overflow-y: auto;
+            border-right: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .book-page:last-child {
+            border-right: none;
+            border-left: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .book-page::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background: rgba(0,0,0,0.1);
+            transform: translateX(-50%);
+        }
+
+        .page-content {
+            display: none;
+            height: 100%;
+        }
+
+        .page-content.active {
+            display: block;
+            animation: pageFlip 0.6s ease-out;
+        }
+
+        @keyframes pageFlip {
+            from { 
+                opacity: 0; 
+                transform: rotateY(-15deg);
+            }
+            to { 
+                opacity: 1; 
+                transform: rotateY(0deg);
+            }
+        }
+
+        .page-content h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 2.2rem;
+            color: #c2185b;
+            margin-bottom: 25px;
+            text-align: center;
+            border-bottom: 2px solid #ffe0e6;
+            padding-bottom: 10px;
+        }
+
+        /* Enhanced Image Upload Areas */
+        .photo-upload {
+            width: 100%;
+            height: 220px;
+            border: 3px dashed #c2185b;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            background: linear-gradient(135deg, #fce4ec, #f8bbd9);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .photo-upload:hover {
+            background: linear-gradient(135deg, #f8bbd9, #fce4ec);
+            transform: scale(1.02);
+        }
+
+        .photo-upload input[type="file"] {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .photo-upload .upload-text {
+            font-size: 18px;
+            color: #c2185b;
+            text-align: center;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .photo-upload .upload-icon {
+            font-size: 3rem;
+            color: #c2185b;
+        }
+
+        .uploaded-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        /* Enhanced Message Areas */
+        .message-input {
+            width: 100%;
+            height: 180px;
+            border: 2px solid #ffe0e6;
+            border-radius: 12px;
+            padding: 15px;
+            font-size: 16px;
+            resize: none;
+            font-family: 'Crimson Text', serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #fff, #fafafa);
+            box-shadow: inset 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .message-input:focus {
+            outline: none;
+            border-color: #c2185b;
+            box-shadow: 
+                inset 0 2px 8px rgba(0,0,0,0.1),
+                0 0 15px rgba(194,24,91,0.2);
+        }
+
+        /* Enhanced Navigation */
+        .page-controls {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: rgba(255,255,255,0.9);
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        .page-btn {
+            background: linear-gradient(135deg, #c2185b, #ad1457);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(194,24,91,0.3);
+        }
+
+        .page-btn:hover {
+            background: linear-gradient(135deg, #ad1457, #880e4f);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(194,24,91,0.4);
+        }
+
+        .page-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .page-number {
+            font-weight: bold;
+            color: #333;
+            font-size: 18px;
+            min-width: 120px;
+            text-align: center;
+        }
+
+        /* Close Button */
+        .close-book-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #ff5722, #d84315);
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1001;
+            display: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255,87,34,0.3);
+        }
+
+        .close-book-btn:hover {
+            background: linear-gradient(135deg, #d84315, #bf360c);
+            transform: scale(1.05);
+        }
+
+        /* Love Counter */
+        .love-counter {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Enhanced Content Sections */
+        .content-section {
+            max-width: 1400px;
+            margin: 80px auto;
+            padding: 0 20px;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .section-title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #fff;
+            text-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+            animation: sectionTitleFloat 4s ease-in-out infinite;
+        }
+
+        @keyframes sectionTitleFloat {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-5px); }
+        }
+
+        /* Enhanced Love Letters */
+        .letters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin: 50px 0;
+        }
+
+        .letter-card {
+            background: rgba(255, 255, 255, 0.95);
+            color: #333;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 
+                0 15px 40px rgba(0,0,0,0.2),
+                inset 0 1px 0 rgba(255,255,255,0.8);
+            transform: translateY(0);
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            position: relative;
+            overflow: hidden;
+            border: 2px solid rgba(255,255,255,0.5);
+        }
+
+        .letter-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(194,24,91,0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s;
+            opacity: 0;
+        }
+
+        .letter-card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 
+                0 25px 60px rgba(0,0,0,0.3),
+                inset 0 1px 0 rgba(255,255,255,0.9);
+        }
+
+        .letter-card:hover::before {
+            opacity: 1;
+            animation: shine 0.8s ease-in-out;
+        }
+
+        .letter-card h3 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.8rem;
+            color: #c2185b;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .letter-card p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .letter-card small {
+            font-style: italic;
+            color: #666;
+            font-size: 1rem;
+        }
+
+        /* Interactive Love Messages */
+        .love-messages {
+            margin: 60px 0;
+        }
+
+        .message-generator {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 20px;
+            margin: 30px 0;
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255,255,255,0.2);
+        }
+
+        .generate-btn {
+            background: linear-gradient(135deg, #e91e63, #ad1457);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin: 20px 10px;
+            box-shadow: 0 6px 20px rgba(233,30,99,0.3);
+        }
+
+        .generate-btn:hover {
+            background: linear-gradient(135deg, #ad1457, #880e4f);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(233,30,99,0.4);
+        }
+
+        .generated-message {
+            background: rgba(255,255,255,0.9);
+            color: #333;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            border-left: 4px solid #e91e63;
+            animation: messageAppear 0.5s ease-out;
+        }
+
+        @keyframes messageAppear {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        /* Memory Wall */
+        .memory-wall {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .memory-card {
+            height: 300px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255,255,255,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .memory-card:hover {
+            transform: scale(1.05) rotate(2deg);
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .memory-card .icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .memory-card .title {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        /* Love Quotes Carousel */
+        .quotes-carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 50px auto;
+            overflow: hidden;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(15px);
+        }
+
+        .quote {
+            background: transparent;
+            border: none;
+            padding: 40px;
+            margin: 0;
+            border-radius: 0;
+            font-size: 1.4rem;
+            font-style: italic;
+            line-height: 1.8;
+            text-align: center;
+            display: none;
+        }
+
+        .quote.active {
+            display: block;
+            animation: quoteSlide 0.6s ease-in-out;
+        }
+
+        @keyframes quoteSlide {
+            from { opacity: 0; transform: translateX(50px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .quote-nav {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .quote-dot {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            margin: 0 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .quote-dot.active {
+            background: #fff;
+            transform: scale(1.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .title { font-size: 3.5rem; }
+            .subtitle { font-size: 1.5rem; }
+            .book { width: 280px; height: 380px; }
+            .book-modal { width: 95%; height: 90%; }
+            .book-inner { flex-direction: column; }
+            .book-page { width: 100%; height: 50%; border-right: none; border-bottom: 1px solid rgba(0,0,0,0.1); }
+            .book-page:last-child { border-left: none; border-bottom: none; }
+            .letters-grid { grid-template-columns: 1fr; }
+            .section-title { font-size: 2.5rem; }
+            .memory-wall { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #c2185b, #ad1457);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, #ad1457, #880e4f);
+        }
+    </style>
+</head>
+<body>
+    <!-- Love Counter -->
+    <div class="love-counter" id="loveCounter">
+        ❤️ Love Clicks: <span id="clickCount">0</span>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+        <h1 class="title">For My Beloved Nibel</h1>
+        <p class="subtitle">A digital Appology to our endless love story</p>
+    </div>
+
+    <!-- Interactive Book -->
+    <div class="book-container">
+        <div class="book" id="loveBook">
+            <div class="book-spine"></div>
+            <div class="book-cover">
+                <h2>📖 Our Eternal Love Story</h2>
+                <p>Click to open and explore<br>the pages of our hearts</p>
+            </div>
+            <div class="book-back">
+                <h2>💕</h2>
+                <p>With all my love,<br>Forever and always</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Enhanced Book Modal -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <button class="close-book-btn" id="closeBookBtn">✕</button>
+    
+    <div class="book-modal" id="bookModal">
+        <div class="book-inner">
+            <div class="book-page">
+                <div class="page-content active" id="page1">
+                    <h2>💝 My Heart's Message</h2>
+                    <textarea class="message-input" placeholder="Write your most heartfelt message to Nibel here...">My dearest, most precious Nibel,
+
+Words feel so small when I try to capture the magnitude of my love for you. You are not just the love of my life – you are life itself, breathing meaning into every moment we share.
+
+Every sunrise reminds me of your radiant smile, every sunset of the peace I find in your arms. You are my morning coffee and my evening wine, my adventure and my home, my question and my answer.
+
+I love how you [add personal details about what you love about Nibel]...
+I cherish the way you [add specific memories and moments]...
+
+With you, I've discovered that love isn't just a feeling – it's a universe, and I want to explore every corner of it with you.
+
+Forever yours,
+</textarea>
+                    
+             <div class="photo-upload">
+                <img src="2.jpg" alt="Favorite photo" width="600" height="400">
+             </div>
+            </div>
+
+            <div class="page-content" id="page2">
+                    <h2>✨A big Appology </h2>
+                    <textarea class="message-input" placeholder="The Appology">My love ❤️,
+I want to start by apologizing for not texting you today. It wasn’t because I wanted to ignore you, but because I needed a little time to collect myself and find the right way to talk about what happened. Our fight hurt me, but more importantly, I know it hurt us.
+
+I don’t want anything bad to stand between us or to let something small grow into something that weakens what we have. You mean so much to me, and I truly want our relationship to keep getting stronger and healthier.
+
+I’m ready to let go of what’s not good for us and work with you to build something even more beautiful. Please forgive me if my silence worried you—I only wanted to come back to you with a clearer heart and mind.
+
+I love you deeply, and I don’t want us to lose our way over this. ❤️</textarea>
+                    
+                <div class="photo-upload">
+                <img src="3.gif" alt="Favorite photo" width="420" height="250">
+             </div>
+                </div>
+            </div>
+
+            <div class="book-page">
+                <div class="page-content" id="page3">
+                    <h2>🌟 Reasons I Adore You</h2>
+                    <textarea class="message-input" placeholder="List all the beautiful reasons why you love Nibel...">My beloved, I love you because...
+
+1. Your laughter is the most beautiful music I've ever heard
+2. Your kindness touches everyone around you like sunlight
+3. Your strength inspires me to be better every single day
+4. Your eyes hold galaxies of dreams and wonder
+5. Your touch feels like coming home after a long journey
+6. You are the cutest girl i have ever met in my life
+7. You are the smartest most imbitious girl in the world
+8. You are the Hottest girl in the universe
+9. You have always loved me no matter what
+10. But most of all, I love you for the way you love – completely, authentically, beautifully.
+
+You are my favorite human, my greatest adventure, my sweetest dream come true.</textarea>
+                    
+                     <div class="photo-upload">
+                <img src="images.jpg" alt="Favorite photo" width="420" height="250">
+             </div>
+                </div>
+
+                <div class="page-content" id="page4">
+                    <h2>🗺️ Our Adventures Together</h2>
+                    <textarea class="message-input" placeholder="Share your favorite memories and adventures...">Every adventure with you becomes a treasured memory...
+
+well for this part i wanted to mention a lot off thing about wwhat we didi in our relationshipfrom first day we met 
+in khenchela to the days we met in kouba to our first hug our first kiss , studying together going to college together , visiting algiers together going to the sea 
+and there is much more that we need to remember by picture my love </textarea>
+                    
+                   
+                </div>
+
+                <div class="page-content" id="page5">
+                    <h2>🔮 Our Beautiful Future</h2>
+                    <textarea class="message-input" placeholder="Share your dreams and promises for the future...">My promises to you for all our tomorrows...
+
+I promise to love you through every season – through spring's new beginnings and winter's quiet moments, through summer's joy and autumn's changes.
+
+I promise to be your biggest cheerleader, your softest place to land, your partner in all of life's beautiful chaos.
+
+I promise to grow with you, laugh with you, dream with you, and build a love story that transcends time itself.
+
+[Add your personal promises and future dreams together...]
+
+Together, we'll write a love story that poets will envy and that will inspire generations to believe in forever.</textarea>
+                    
+                        <div class="photo-upload">
+                <img src="4.jpg" alt="Favorite photo" width="420" height="250">
+             </div>
+                </div>
+
+                <div class="page-content" id="page6">
+                    <h2>💌 Love Letters Collection</h2>
+                    <textarea class="message-input" placeholder="Write short love notes...">Little love notes for my precious Nibel:
+
+• You are my favorite notification
+• Loving you is like breathing – essential and natural
+• You make my heart skip beats and my soul sing songs
+• In a world of temporary things, you are my always
+• I will be always your lover , and i will do everything to keep you 
+• i am sorry for everything and i am sure i will compnsate you on every thing 
+• i love my honey forever and ever and ever and ever and ever and ever and everrrrrrrrrr
+• my last thing here ask it for me after 6 years inchalahh <3 ..
+
+Every day I discover new reasons to fall deeper in love with you.</textarea>
+                     <div class="photo-upload">
+                <img src="5.jpg" alt="Favorite photo" width="420" height="250">
+             </div>
+                </div>
+                </div>
+            
+        </div>
+
+        <div class="page-controls">
+            <button class="page-btn" id="prevBtn" onclick="previousPage()">← Previous</button>
+            <span class="page-number" id="pageNumber">Page 1 of 6</span>
+            <button class="page-btn" id="nextBtn" onclick="nextPage()">Next →</button>
+        </div>
+    </div>
+
+    <!-- Enhanced Love Letters Section -->
+    <div class="content-section">
+        <h2 class="section-title">💌 Love Letters from the Heart</h2>
+        <div class="letters-grid">
+            <div class="letter-card" onclick="animateCard(this)">
+                <h3>The Moment I Knew</h3>
+                <p>There was a quiet Tuesday when I looked at you reading by the window, sunlight dancing in your hair, and I just knew – this is the person I want to grow old with. It wasn't dramatic or cinematic; it was peaceful and certain, like finding my way home after being lost for years.</p>
+                <small>- Written with endless love</small>
+            </div>
+            <div class="letter-card" onclick="animateCard(this)">
+                <h3>Your Beautiful Soul</h3>
+                <p>Dearest Nibel, your soul shines brighter than every star in the night sky. The way you see beauty in simple moments, the compassion you show to everyone you meet, the strength you carry with such grace – you are poetry in human form, and I am forever grateful to be your reader.</p>
+                <small>- From your devoted admirer</small>
+            </div>
+            <div class="letter-card" onclick="animateCard(this)">
+                <h3>Thank You, My Love</h3>
+                <p>Thank you for choosing me every single day. Thank you for your patience when I'm difficult, your laughter when I'm silly, your strength when I'm weak. Thank you for showing me that love isn't just a feeling – it's a choice, a commitment, a beautiful daily practice.</p>
+                <small>- With boundless gratitude</small>
+            </div>
+            <div class="letter-card" onclick="animateCard(this)">
+                <h3>You Are My Everything</h3>
+                <p>You are my morning sunshine and my evening peace. You are the adventure I crave and the comfort I need. You are my favorite hello and my hardest goodbye. You are my today, my tomorrow, and my always. Simply put – you are everything beautiful in this world.</p>
+                <small>- Forever and completely yours</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Love Message Generator -->
+    <div class="content-section">
+        <h2 class="section-title">✨ Love Message Magic</h2>
+        <div class="message-generator">
+            <p style="font-size: 1.2rem; margin-bottom: 20px;">Generate personalized love messages for Nibel!</p>
+            <button class="generate-btn" onclick="generateLoveMessage('sweet')">Sweet Messages</button>
+            <button class="generate-btn" onclick="generateLoveMessage('poetic')">Poetic Lines</button>
+            <button class="generate-btn" onclick="generateLoveMessage('funny')">Playful Notes</button>
+            <button class="generate-btn" onclick="generateLoveMessage('deep')">Deep Thoughts</button>
+            <div id="generatedMessage" class="generated-message" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Enhanced Love Quotes Carousel -->
+    <div class="content-section">
+        <h2 class="section-title">💕 Quotes That Speak Our Love</h2>
+        <div class="quotes-carousel">
+            <div class="quote active">
+                "In all the world, there is no heart for me like yours. In all the world, there is no love for you like mine." - Maya Angelou
+            </div>
+            <div class="quote">
+                "I love you not only for what you are, but for what I am when I am with you." - Roy Croft
+            </div>
+            <div class="quote">
+                "You are my today and all of my tomorrows." - Leo Christopher
+            </div>
+            <div class="quote">
+                "Every love story is beautiful, but ours is my favorite." - Unknown
+            </div>
+            <div class="quote">
+                "I fell in love with you because of the million things you never knew you were doing." - Unknown
+            </div>
+            <div class="quote">
+                "You are the finest, loveliest, tenderest, and most beautiful person I have ever known." - F. Scott Fitzgerald
+            </div>
+            <div class="quote-nav">
+                <span class="quote-dot active" onclick="showQuote(0)"></span>
+                <span class="quote-dot" onclick="showQuote(1)"></span>
+                <span class="quote-dot" onclick="showQuote(2)"></span>
+                <span class="quote-dot" onclick="showQuote(3)"></span>
+                <span class="quote-dot" onclick="showQuote(4)"></span>
+                <span class="quote-dot" onclick="showQuote(5)"></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Memory Wall Section -->
+    <div class="content-section">
+        <h2 class="section-title">🏛️ Our Memory Palace</h2>
+        <div class="memory-wall">
+            <div class="memory-card" onclick="memoryCardClick(this)" data-memory="First Kiss">
+                <div class="icon">💋</div>
+                <div class="title">Our First Kiss</div>
+            </div>
+            <div class="memory-card" onclick="memoryCardClick(this)" data-memory="Travel">
+                <div class="icon">✈️</div>
+                <div class="title">Adventures Together</div>
+            </div>
+            <div class="memory-card" onclick="memoryCardClick(this)" data-memory="Celebration">
+                <div class="icon">🎉</div>
+                <div class="title">Celebrations & Milestones</div>
+            </div>
+            <div class="memory-card" onclick="memoryCardClick(this)" data-memory="Quiet">
+                <div class="icon">🌙</div>
+                <div class="title">Quiet Moments</div>
+            </div>
+            <div class="memory-card" onclick="memoryCardClick(this)" data-memory="Laughter">
+                <div class="icon">😂</div>
+                <div class="title">Laughter & Joy</div>
+            </div>
+            <div class="memory-card" onclick="memoryCardClick(this)" data-memory="Support">
+                <div class="icon">🤝</div>
+                <div class="title">Supporting Each Other</div>
+            </div>
+        </div>
+        <p style="margin-top: 30px; font-style: italic; font-size: 1.1rem;">Click on each memory card to add your own special moments!</p>
+    </div>
+
+    <script>
+        // Enhanced JavaScript functionality
+        let currentPage = 1;
+        const totalPages = 6;
+        let loveClicks = 0;
+        let currentQuote = 0;
+        const totalQuotes = 6;
+
+        // Book interaction with enhanced animations
+        document.getElementById('loveBook').addEventListener('click', function() {
+            this.style.transform = 'rotateY(-180deg) scale(1.1)';
+            setTimeout(() => {
+                document.getElementById('modalOverlay').style.display = 'block';
+                document.getElementById('bookModal').style.display = 'block';
+                document.getElementById('closeBookBtn').style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }, 400);
+        });
+
+        document.getElementById('closeBookBtn').addEventListener('click', closeBook);
+        document.getElementById('modalOverlay').addEventListener('click', closeBook);
+
+        function closeBook() {
+            document.getElementById('modalOverlay').style.display = 'none';
+            document.getElementById('bookModal').style.display = 'none';
+            document.getElementById('closeBookBtn').style.display = 'none';
+            document.body.style.overflow = 'auto';
+            document.getElementById('loveBook').style.transform = 'rotateY(0deg) scale(1)';
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                document.getElementById(`page${currentPage}`).classList.remove('active');
+                currentPage++;
+                document.getElementById(`page${currentPage}`).classList.add('active');
+                updatePageNavigation();
+                incrementLoveCounter();
+            }
+        }
+
+        function previousPage() {
+            if (currentPage > 1) {
+                document.getElementById(`page${currentPage}`).classList.remove('active');
+                currentPage--;
+                document.getElementById(`page${currentPage}`).classList.add('active');
+                updatePageNavigation();
+            }
+        }
+
+        function updatePageNavigation() {
+            document.getElementById('pageNumber').textContent = `Page ${currentPage} of ${totalPages}`;
+            document.getElementById('prevBtn').disabled = currentPage === 1;
+            document.getElementById('nextBtn').disabled = currentPage === totalPages;
+        }
+
+        // Enhanced image upload functionality
+        function uploadImage(input, targetId) {
+            const file = input.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const uploadContainer = input.parentElement;
+                    uploadContainer.innerHTML = `<img src="${e.target.result}" class="uploaded-image" alt="Uploaded photo">`;
+                    uploadContainer.style.border = '3px solid #4caf50';
+                    
+                    // Add success animation
+                    uploadContainer.style.animation = 'uploadSuccess 0.6s ease-out';
+                    incrementLoveCounter();
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        // Love counter functionality
+        function incrementLoveCounter() {
+            loveClicks++;
+            document.getElementById('clickCount').textContent = loveClicks;
+            createHeartBurst();
+        }
+
+        function createHeartBurst() {
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => createHeart(), i * 100);
+            }
+        }
+
+        // Enhanced floating elements
+        function createHeart() {
+            const hearts = ['❤️', '💖', '💕', '💗', '💓', '💝', '💘'];
+            const heart = document.createElement('div');
+            heart.className = 'heart';
+            heart.innerHTML = hearts[Math.floor(Math.random() * hearts.length)];
+            heart.style.left = Math.random() * 100 + 'vw';
+            heart.style.animationDuration = (Math.random() * 4 + 4) + 's';
+            heart.style.fontSize = (Math.random() * 15 + 15) + 'px';
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                if (document.body.contains(heart)) {
+                    heart.remove();
+                }
+            }, 8000);
+        }
+
+        function createLoveWord() {
+            const words = ['Love', 'Forever', 'Always', 'Beautiful', 'Amazing', 'Precious', 'Darling', 'Sweetheart', 'Beloved', 'Treasure', 'Angel', 'Sunshine'];
+            const word = document.createElement('div');
+            word.className = 'love-word';
+            word.innerHTML = words[Math.floor(Math.random() * words.length)];
+            word.style.left = Math.random() * 90 + 'vw';
+            word.style.animationDuration = (Math.random() * 6 + 6) + 's';
+            word.style.fontSize = (Math.random() * 10 + 24) + 'px';
+            document.body.appendChild(word);
+            
+            setTimeout(() => {
+                if (document.body.contains(word)) {
+                    word.remove();
+                }
+            }, 12000);
+        }
+
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + 'vw';
+            particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
+            particle.style.background = `hsl(${Math.random() * 60 + 300}, 70%, 80%)`;
+            document.body.appendChild(particle);
+            
+            setTimeout(() => {
+                if (document.body.contains(particle)) {
+                    particle.remove();
+                }
+            }, 6000);
+        }
+
+        // Love message generator
+        const loveMessages = {
+            sweet: [
+                "Nibel, you make my heart skip beats and my soul dance with joy.",
+                "Every day with you feels like unwrapping a precious gift.",
+                "You are the sweetest melody in the symphony of my life.",
+                "Your smile is my favorite work of art, and I never tire of admiring it.",
+                "In your arms, I've found my forever home."
+            ],
+            poetic: [
+                "You are the poetry my heart writes when words fail me.",
+                "In the garden of my heart, you are the most beautiful flower that ever bloomed.",
+                "You paint sunsets in my ordinary days and bring starlight to my darkest nights.",
+                "Love was just a word until I learned its meaning from you.",
+                "You are the verse that makes my life's poem complete."
+            ],
+            funny: [
+                "You're the reason I smile at my phone like an idiot.",
+                "I love you more than coffee, and that's saying something!",
+                "You're my favorite weirdo, and I'm keeping you forever.",
+                "Warning: I might spontaneously combust from loving you too much.",
+                "You're stuck with me now – I hope you're ready for a lifetime of bad jokes and endless hugs!"
+            ],
+            deep: [
+                "With you, I've learned that love isn't just an emotion – it's a way of being.",
+                "You've shown me that home isn't a place; it's wherever you are.",
+                "In loving you, I've discovered parts of myself I never knew existed.",
+                "You are both my greatest adventure and my most peaceful sanctuary.",
+                "Through your eyes, I see the world as it was meant to be seen – full of wonder and possibility."
+            ]
+        };
+
+        function generateLoveMessage(type) {
+            const messages = loveMessages[type];
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+            const messageDiv = document.getElementById('generatedMessage');
+            messageDiv.innerHTML = `"${randomMessage}"`;
+            messageDiv.style.display = 'block';
+            incrementLoveCounter();
+        }
+
+        // Quote carousel functionality
+        function showQuote(index) {
+            document.querySelectorAll('.quote').forEach(q => q.classList.remove('active'));
+            document.querySelectorAll('.quote-dot').forEach(d => d.classList.remove('active'));
+            
+            document.querySelectorAll('.quote')[index].classList.add('active');
+            document.querySelectorAll('.quote-dot')[index].classList.add('active');
+            currentQuote = index;
+        }
+
+        function autoRotateQuotes() {
+            currentQuote = (currentQuote + 1) % totalQuotes;
+            showQuote(currentQuote);
+        }
+
+        // Memory card interactions
+        function memoryCardClick(card) {
+            const memoryType = card.dataset.memory;
+            card.style.transform = 'scale(1.1) rotate(5deg)';
+            card.style.background = 'rgba(255, 255, 255, 0.4)';
+            
+            setTimeout(() => {
+                card.style.transform = 'scale(1) rotate(0deg)';
+                card.style.background = 'rgba(255, 255, 255, 0.2)';
+            }, 300);
+            
+            // You can customize this to show specific memory content
+            alert(`Add your special "${memoryType}" memories here! This is where you can write about your precious moments together.`);
+            incrementLoveCounter();
+        }
+
+        // Letter card animation
+        function animateCard(card) {
+            card.style.transform = 'translateY(-20px) scale(1.05) rotate(1deg)';
+            setTimeout(() => {
+                card.style.transform = 'translateY(0) scale(1) rotate(0deg)';
+            }, 300);
+            incrementLoveCounter();
+        }
+
+        // Enhanced mouse interaction
+        document.addEventListener('mousemove', function(e) {
+            if (Math.random() > 0.95) {
+                const sparkle = document.createElement('div');
+                sparkle.innerHTML = '✨';
+                sparkle.style.position = 'fixed';
+                sparkle.style.left = e.clientX + 'px';
+                sparkle.style.top = e.clientY + 'px';
+                sparkle.style.pointerEvents = 'none';
+                sparkle.style.zIndex = '1000';
+                sparkle.style.fontSize = '16px';
+                sparkle.style.animation = 'fadeInUp 1s ease-out forwards';
+                document.body.appendChild(sparkle);
+                
+                setTimeout(() => {
+                    if (document.body.contains(sparkle)) {
+                        sparkle.remove();
+                    }
+                }, 1000);
+            }
+        });
+
+        // Click anywhere to create hearts
+        document.addEventListener('click', function(e) {
+            if (e.target.tagName !== 'BUTTON' && e.target.tagName !== 'INPUT' && e.target.tagName !== 'TEXTAREA') {
+                createHeartAtPosition(e.clientX, e.clientY);
+            }
+        });
+
+        function createHeartAtPosition(x, y) {
+            const heart = document.createElement('div');
+            heart.innerHTML = '💖';
+            heart.style.position = 'fixed';
+            heart.style.left = x + 'px';
+            heart.style.top = y + 'px';
+            heart.style.pointerEvents = 'none';
+            heart.style.zIndex = '1000';
+            heart.style.fontSize = '20px';
+            heart.style.animation = 'heartPop 0.8s ease-out forwards';
+            document.body.appendChild(heart);
+            
+            setTimeout(() => {
+                if (document.body.contains(heart)) {
+                    heart.remove();
+                }
+            }, 800);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (document.getElementById('bookModal').style.display === 'block') {
+                if (e.key === 'ArrowRight' || e.key === ' ') {
+                    e.preventDefault();
+                    nextPage();
+                } else if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    previousPage();
+                } else if (e.key === 'Escape') {
+                    e.preventDefault();
+                    closeBook();
+                }
+            }
+        });
+
+        // Add CSS animation for heart pop
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes heartPop {
+                0% { transform: scale(0) rotate(0deg); opacity: 1; }
+                50% { transform: scale(1.3) rotate(180deg); opacity: 0.8; }
+                100% { transform: scale(0) rotate(360deg); opacity: 0; }
+            }
+            
+            @keyframes uploadSuccess {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.05); background: rgba(76, 175, 80, 0.2); }
+                100% { transform: scale(1); }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Initialize animations
+        setInterval(createHeart, 1500);
+        setInterval(createLoveWord, 3000);
+        setInterval(createParticle, 800);
+        setInterval(autoRotateQuotes, 5000);
+
+        // Initialize page navigation
+        updatePageNavigation();
+
+        // Welcome sequence
+        setTimeout(() => {
+            const welcomeMessage = `Welcome to your enhanced love website for Nibel! ✨
+
+This beautiful digital love letter includes:
+📖 A 6-page interactive book with photo uploads
+💌 Customizable love letters and messages  
+🎯 Interactive memory cards and quote carousel
+❤️ Love click counter and magical animations
+📸 Easy photo upload areas throughout
+🎨 Responsive design for all devices
+
+To personalize:
+1. Replace placeholder text with your personal messages
+2. Upload your favorite photos together
+3. Customize the love letters and quotes
+4. Add your own memories to the memory cards
+5. Generate personalized love messages
+
+Every interaction adds to your love counter and creates magical effects! 
+Click anywhere to create hearts, navigate with arrow keys, and enjoy the journey of love! 💕`;
+
+            if (confirm('Welcome to your enhanced love website! Click OK to see the full feature guide.')) {
+                alert(welcomeMessage);
+            }
+        }, 2000);
+    </script>
+</body>
+</html>
